@@ -38,7 +38,7 @@ class Trainer:
         self.optim.zero_grad()
 
     def save_model(self, n_iter):
-        checkpiont = {
+        checkpoint = {
             'n_iters' : n_iter + 1,
             'm_state_dict' : self.model.state_dict(),
             'optim' : self.optim.state_dict()
